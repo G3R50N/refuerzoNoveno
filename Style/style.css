@@ -1,0 +1,157 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f5f9ff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #002b5c;
+}
+
+header {
+  background-color: #e0efff;
+  box-shadow: -2px 5px 3px -4px rgba(0, 123, 255, 0.8);
+  color: rgb(3, 60, 131);
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  font-size: 18pt;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.areas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100px;
+}
+
+.area img {
+  width: 15vw;
+  max-width: 70px;
+  height: auto;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 20px 10px;
+  background-color: #d9ebff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.3em;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: normal; /* permite saltos si los necesitas */
+}
+
+.buttons a:hover {
+  background-color: #1171d9;
+  color: white;
+  transform: scale(1.05);
+}
+
+.buttons .highlight {
+  background-color: #e0efff;
+  color: black;
+}
+
+a p {
+  margin: 0;
+}
+
+a small {
+  font-size: 0.7em;
+  display: block;
+  margin-top: 5px;
+}
+
+footer {
+  background-color: #e0efff;
+  box-shadow: -2px -7px 3px -4px rgba(163, 202, 243, 0.8);
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media screen and (max-width: 1980px) {
+  .areas {
+    gap: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .areas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+  .buttons button {
+    padding: 30px 10px;
+    font-size: 1.2em;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .area img {
+    width: 50px;
+  }
+
+  .buttons a {
+    padding: 30px 10px;
+    font-size: 1.2em;
+    width: 100%;
+  }
+}

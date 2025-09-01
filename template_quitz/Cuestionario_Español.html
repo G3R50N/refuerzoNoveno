@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuestionario de Español</title>
+    <base href="https://g3r50n.github.io/refuerzoNoveno/">
+
+    <style>
+      
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 90%;
+        max-width: 700px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      .question {
+        margin: 20px 0;
+      }
+      .question p {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        cursor: pointer;
+      }
+      button {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      .result {
+        margin-top: 20px;
+        padding: 15px;
+        font-weight: bold;
+        border-radius: 6px;
+        text-align: center;
+      }
+      .aprobado {
+        background-color: #d4edda;
+        color: #155724;
+      }
+      .reprobado {
+        background-color: #f8d7da;
+        color: #721c24;
+      }
+      .nav-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .nav-buttons a {
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 14px;
+        background-color: #6c757d;
+        color: white;
+      }
+      .nav-buttons a:hover {
+        background-color: #5a6268;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cuestionario de Español</h1>
+      <form id="quizForm">
+        <!-- Tema 1 -->
+        <div class="question">
+          <p>1. ¿Qué es un texto argumentativo?</p>
+          <label><input type="radio" name="q1" value="a" /> Un texto que cuenta una historia ficticia</label>
+          <label><input type="radio" name="q1" value="b" /> Un texto que presenta razones para defender una idea</label>
+          <label><input type="radio" name="q1" value="c" /> Un texto que solo describe un lugar</label>
+        </div>
+
+        <div class="question">
+          <p>2. ¿Cuál de los siguientes es un ejemplo de argumento?</p>
+          <label><input type="radio" name="q2" value="a" /> "El perro es muy bonito"</label>
+          <label><input type="radio" name="q2" value="b" /> "Debemos cuidar el agua porque es esencial para la vida"</label>
+          <label><input type="radio" name="q2" value="c" /> "La casa está pintada de azul"</label>
+        </div>
+
+        <div class="question">
+          <p>3. ¿Qué elemento es fundamental en un texto argumentativo?</p>
+          <label><input type="radio" name="q3" value="a" /> La descripción detallada de paisajes</label>
+          <label><input type="radio" name="q3" value="b" /> La exposición de pruebas y razones</label>
+          <label><input type="radio" name="q3" value="c" /> El uso de rimas</label>
+        </div>
+
+        <!-- Tema 2 -->
+        <div class="question">
+          <p>4. ¿Quién escribió "Cien años de soledad"?</p>
+          <label><input type="radio" name="q4" value="a" /> Mario Vargas Llosa</label>
+          <label><input type="radio" name="q4" value="b" /> Gabriel García Márquez</label>
+          <label><input type="radio" name="q4" value="c" /> Pablo Neruda</label>
+        </div>
+
+        <div class="question">
+          <p>5. ¿Qué género literario se centra en hechos reales?</p>
+          <label><input type="radio" name="q5" value="a" /> Narrativo</label>
+          <label><input type="radio" name="q5" value="b" /> Lírico</label>
+          <label><input type="radio" name="q5" value="c" /> Ensayo</label>
+        </div>
+
+        <div class="question">
+          <p>6. ¿Cuál es la función principal de la literatura?</p>
+          <label><input type="radio" name="q6" value="a" /> Transmitir conocimientos científicos</label>
+          <label><input type="radio" name="q6" value="b" /> Expresar ideas, emociones y experiencias</label>
+          <label><input type="radio" name="q6" value="c" /> Calcular fórmulas matemáticas</label>
+        </div>
+
+        <!-- Tema 3 -->
+        <div class="question">
+          <p>7. ¿Cómo se llama el narrador que participa en la historia?</p>
+          <label><input type="radio" name="q7" value="a" /> Narrador omnisciente</label>
+          <label><input type="radio" name="q7" value="b" /> Narrador en primera persona</label>
+          <label><input type="radio" name="q7" value="c" /> Narrador testigo</label>
+        </div>
+
+        <div class="question">
+          <p>8. ¿Qué es una metáfora?</p>
+          <label><input type="radio" name="q8" value="a" /> Una comparación directa con "como"</label>
+          <label><input type="radio" name="q8" value="b" /> Una repetición de sonidos</label>
+          <label><input type="radio" name="q8" value="c" /> Una comparación implícita entre dos cosas</label>
+        </div>
+
+        <div class="question">
+          <p>9. ¿Qué estudia la gramática?</p>
+          <label><input type="radio" name="q9" value="a" /> Las reglas del lenguaje</label>
+          <label><input type="radio" name="q9" value="b" /> Los colores de los objetos</label>
+          <label><input type="radio" name="q9" value="c" /> Los números y operaciones</label>
+        </div>
+
+        <button type="button" onclick="calcularResultado()">Enviar respuestas</button>
+      </form>
+
+      <div id="resultado" class="result"></div>
+      <div class="nav-buttons" id="navButtons" style="display: none">
+        <a href="../index.html">Volver al inicio</a>
+        <a href="../template/Español.html">Volver a Español</a>
+      </div>
+    </div>
+
+    <script>
+      function calcularResultado() {
+        const respuestasCorrectas = {
+          q1: 'b',
+          q2: 'b',
+          q3: 'b',
+          q4: 'b',
+          q5: 'c',
+          q6: 'b',
+          q7: 'b',
+          q8: 'c',
+          q9: 'a',
+        };
+
+        let puntaje = 0;
+        const form = document.forms['quizForm'];
+
+        for (let pregunta in respuestasCorrectas) {
+          const seleccionada = form[pregunta].value;
+          if (seleccionada === respuestasCorrectas[pregunta]) {
+            puntaje++;
+          }
+        }
+
+        const total = Object.keys(respuestasCorrectas).length;
+        const resultadoDiv = document.getElementById('resultado');
+        const navButtons = document.getElementById('navButtons');
+
+        if (puntaje >= total * 0.6) {
+          resultadoDiv.textContent = `¡Aprobado! Tu puntaje fue ${puntaje} de ${total}`;
+          resultadoDiv.className = 'result aprobado';
+        } else {
+          resultadoDiv.textContent = `Reprobado. Tu puntaje fue ${puntaje} de ${total}`;
+          resultadoDiv.className = 'result reprobado';
+        }
+
+        navButtons.style.display = 'flex';
+      }
+    </script>
+  </body>
+</html>
+

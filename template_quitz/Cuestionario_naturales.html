@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuestionario de Ciencias Naturales</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #38ef7d, #11998e);
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 90%;
+        max-width: 900px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: #11998e;
+      }
+      .question {
+        margin: 20px 0;
+      }
+      .question h3 {
+        margin-bottom: 10px;
+        color: #333;
+      }
+      .options label {
+        display: block;
+        background: #f9f9f9;
+        margin: 8px 0;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .options label:hover {
+        background: #e0f7f1;
+      }
+      button {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 10px;
+        background: #11998e;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      button:hover {
+        background: #0c7a6a;
+      }
+      #resultado {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .aprobado {
+        color: green;
+      }
+      .reprobado {
+        color: red;
+      }
+      .links {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .links a {
+        text-decoration: none;
+        padding: 12px 20px;
+        background: #11998e;
+        color: white;
+        border-radius: 8px;
+        transition: background 0.3s;
+      }
+      .links a:hover {
+        background: #0c7a6a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cuestionario de Ciencias Naturales</h1>
+
+      <form id="quizForm">
+        <!-- Tema 1: Sistema Reproductor Humano y Sexualidad -->
+        <h2>Tema 1: Sistema Reproductor Humano y Sexualidad</h2>
+        <div class="question">
+          <h3>1. ¿Cuál es la función principal del sistema reproductor humano?</h3>
+          <div class="options">
+            <label><input type="radio" name="q1" value="a" /> Regular la respiración</label>
+            <label><input type="radio" name="q1" value="b" /> Garantizar la reproducción</label>
+            <label><input type="radio" name="q1" value="c" /> Transportar oxígeno</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>2. ¿Qué célula reproductora produce el hombre?</h3>
+          <div class="options">
+            <label><input type="radio" name="q2" value="a" /> Óvulos</label>
+            <label><input type="radio" name="q2" value="b" /> Espermatozoides</label>
+            <label><input type="radio" name="q2" value="c" /> Cigotos</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>3. ¿Cuál de los siguientes métodos es un anticonceptivo de barrera?</h3>
+          <div class="options">
+            <label><input type="radio" name="q3" value="a" /> Pastillas anticonceptivas</label>
+            <label><input type="radio" name="q3" value="b" /> Condón</label>
+            <label><input type="radio" name="q3" value="c" /> DIU</label>
+          </div>
+        </div>
+
+        <!-- Tema 2: Ecosistemas y Sostenibilidad Ambiental -->
+        <h2>Tema 2: Ecosistemas y Sostenibilidad Ambiental</h2>
+        <div class="question">
+          <h3>4. ¿Qué es un ecosistema?</h3>
+          <div class="options">
+            <label><input type="radio" name="q4" value="a" /> Un conjunto de seres vivos y su entorno</label>
+            <label><input type="radio" name="q4" value="b" /> Un lugar solo con animales</label>
+            <label><input type="radio" name="q4" value="c" /> Únicamente el clima de una región</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>5. ¿Cuál es un ejemplo de energía renovable?</h3>
+          <div class="options">
+            <label><input type="radio" name="q5" value="a" /> Petróleo</label>
+            <label><input type="radio" name="q5" value="b" /> Energía solar</label>
+            <label><input type="radio" name="q5" value="c" /> Carbón</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>6. ¿Qué acción ayuda a la sostenibilidad ambiental?</h3>
+          <div class="options">
+            <label><input type="radio" name="q6" value="a" /> Reciclar</label>
+            <label><input type="radio" name="q6" value="b" /> Deforestar</label>
+            <label><input type="radio" name="q6" value="c" /> Tirar basura al río</label>
+          </div>
+        </div>
+
+        <!-- Tema 3: Estructura de la Materia y Cambios Químicos -->
+        <h2>Tema 3: Estructura de la Materia y Cambios Químicos</h2>
+        <div class="question">
+          <h3>7. ¿Cuál es la partícula más pequeña que conserva las propiedades de un elemento?</h3>
+          <div class="options">
+            <label><input type="radio" name="q7" value="a" /> Átomo</label>
+            <label><input type="radio" name="q7" value="b" /> Molécula</label>
+            <label><input type="radio" name="q7" value="c" /> Protón</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>8. ¿Qué tipo de cambio ocurre cuando se derrite el hielo?</h3>
+          <div class="options">
+            <label><input type="radio" name="q8" value="a" /> Cambio químico</label>
+            <label><input type="radio" name="q8" value="b" /> Cambio físico</label>
+            <label><input type="radio" name="q8" value="c" /> Transformación nuclear</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <h3>9. ¿Cuál de los siguientes es un cambio químico?</h3>
+          <div class="options">
+            <label><input type="radio" name="q9" value="a" /> Evaporación del agua</label>
+            <label><input type="radio" name="q9" value="b" /> Oxidación del hierro</label>
+            <label><input type="radio" name="q9" value="c" /> Derretimiento de la mantequilla</label>
+          </div>
+        </div>
+
+        <button type="button" onclick="calcularResultado()">Enviar Respuestas</button>
+      </form>
+
+      <div id="resultado"></div>
+      <div class="links" style="display: none" id="links">
+        <a href="../index.html">Volver al Inicio</a>
+        <a href="../template/naturales.html">Volver a Ciencias Naturales</a>
+      </div>
+    </div>
+
+    <script>
+      function calcularResultado() {
+        let respuestasCorrectas = {
+          q1: 'b',
+          q2: 'b',
+          q3: 'b',
+          q4: 'a',
+          q5: 'b',
+          q6: 'a',
+          q7: 'a',
+          q8: 'b',
+          q9: 'b',
+        };
+
+        let totalPreguntas = 9;
+        let puntaje = 0;
+
+        for (let i = 1; i <= totalPreguntas; i++) {
+          let respuesta = document.querySelector(`input[name="q${i}"]:checked`);
+          if (respuesta && respuesta.value === respuestasCorrectas[`q${i}`]) {
+            puntaje++;
+          }
+        }
+
+        let resultadoDiv = document.getElementById('resultado');
+        let linksDiv = document.getElementById('links');
+        if (puntaje >= 6) {
+          resultadoDiv.innerHTML = `Tu puntaje fue de ${puntaje} de ${totalPreguntas}. <span class="aprobado">¡Aprobaste!</span>`;
+        } else {
+          resultadoDiv.innerHTML = `Tu puntaje fue de ${puntaje} de ${totalPreguntas}. <span class="reprobado">No aprobaste. ¡Sigue practicando!</span>`;
+        }
+        linksDiv.style.display = 'flex';
+      }
+    </script>
+  </body>
+</html>
